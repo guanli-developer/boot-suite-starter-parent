@@ -18,4 +18,50 @@
 			<optional>true</optional>
 		</dependency>
 	</dependencies>
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version2.0</name>
+			<url>http://www.apache.org/licenses/</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<scm>
+		<url>https://github.com/guanli-developer/boot-suite-starter-parent</url>
+		<connection>https://github.com/guanli-developer/boot-suite-starter-parent.git</connection>
+		<developerConnection>https://github.com/guanli-developer/boot-suite-starter-parent</developerConnection>
+	</scm>
+	<developers>
+		<developer>
+			<name>Li.Guan</name>
+			<email>guanli_developer@aliyun.com</email>
+		</developer>
+	</developers>
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-gpg-plugin</artifactId>
+				<version>1.5</version>
+				<executions>
+					<execution>
+						<id>sign-artifacts</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>sign</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 </project>
