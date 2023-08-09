@@ -3,10 +3,10 @@
 	<parent>
 		<groupId>tech.guanli.boot.suite</groupId>
 		<artifactId>parent</artifactId>
-		<version>1.0.4-RELEASE</version>
+		<version>1.0.5-RELEASE</version>
 	</parent>
 	<artifactId>springboot-starter-parent</artifactId>
-	<version>1.0.3-RELEASE</version>
+	<version>1.0.4-RELEASE</version>
 	<packaging>pom</packaging>
 	<dependencies>
 		<dependency>
